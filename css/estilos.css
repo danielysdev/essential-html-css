@@ -16,25 +16,42 @@ body {
   font-family: var(--headline1);
 }
 
+ol{
+  padding: 0px;
+}
+ul{
+  padding: 0px;
+}
+.dany{
+  margin-block-start: 20px;
+  margin-block-end: 5px;
+  padding-bottom: 5px;
+
+}
+.dany-footer{
+  padding: 50px 5px;
+}
+
 .wrapper {
   max-inline-size: 902px;
   margin: auto;
 }
 
 .hero {
-  background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/fondohero.png);
+  background-image:  url(../img/dany-img2.png);
   /* background-image: linear-gradient(to top, #7a2cbf9d, transparent), url(../img/webdeveloper.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  block-size: 50px;
+  block-size: 80px;
 }
 
 h1 {
   font-size: 40px;
-  margin-block-start: 20px;
+  margin-block-start: 30px;
   margin-block-end: 16px;
   font-weight: normal;
+  color: #2D4356;
 }
 
 /* h1 + p {
@@ -50,16 +67,25 @@ hr {
 h2 {
   font-size: 2em;
   margin-block-start: 64px;
-  margin-block-end: 40px;
-  font-weight: normal;
+  margin-block-end: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #0E2954;
+  text-decoration: underline;
+  
+}
+
+p{
+  padding-bottom: 2em;
 }
 
 h3 {
   font-size: 24px;
-  margin-block-start: 16px;
-  margin-block-end: 24px;
+  margin-block-start: 40px;
+  margin-block-end: 10px;
   font-weight: normal;
   position: relative;
+  color: #0E2954;
 }
 
 header {
@@ -93,8 +119,11 @@ nav details summary {
 }
 
 .section-content {
-  margin-block-start: 164px;
+  margin-block-start: 100px;
   position: relative;
+  padding: 0px 30px;
+  text-align: center;
+  
 }
 
 .section-content:first-of-type {
@@ -125,17 +154,19 @@ nav details summary {
 
 .section-content ol li {
   line-height: 24px;
+  list-style-type: none;
 }
 
 .section-content ul li {
   margin-block-start: 16px;
+  list-style-type: none;
 }
 
 .section-content h3::after {
   content: '';
   width: 80px;
   height: 4px;
-  background-color: var(--gray40);
+
   display: inline-block;
   position: absolute;
   left: 0;
@@ -209,6 +240,7 @@ blockquote span::before {
 .mail {
   color: var(--gray20);
   margin-block: 40px;
+  text-align: center;
 }
 
 .mail-ancla {
@@ -217,7 +249,7 @@ blockquote span::before {
 }
 
 .footer {
-  background-color: var(--gray30);
+  background-color: #0E2954;
   display: flex;
   justify-content: center;
 }
@@ -225,21 +257,24 @@ blockquote span::before {
 .footer-container {
   padding-inline: 43px;
   padding-block: 48px;
+  text-align: center;
 }
 
 .footer__container-p {
   color: #ffffff;
   font-size: 24px;
+  
 }
 
 .footer__container-social img {
   font-size: 18px;
   margin-inline: 22px;
+  
 }
 
 @media screen and (min-width: 1315px) {
   .hero {
-    block-size: 338px;
+    block-size: 390px;
   }
   header {
     width: 188px;
@@ -274,11 +309,13 @@ blockquote span::before {
   h1 {
     font-size: 60px;
     margin-block-start: 64px;
+    color: #2D4356;
   }
   .footer {
-    background-color: var(--gray30);
+    background-color: #0E2954;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   .footer-container {
     padding-block: 48px;
@@ -297,6 +334,7 @@ blockquote span::before {
   .footer__container-social img {
     font-size: 18px;
     margin-inline: 22px;
+    text-align: center;
   }
 }
 

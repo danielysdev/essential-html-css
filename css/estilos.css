@@ -308,7 +308,7 @@ blockquote span::before {
     line-height: 24px;
   }
   h1 {
-    text-shadow: 7px 4px 5px blueviolet;
+    
     font-size: 60px;
     margin-block-start: 64px;
     color: #2D4356;
